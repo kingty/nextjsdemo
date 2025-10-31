@@ -1,20 +1,11 @@
 import {
-  ShoppingBag,
-  Forklift,
-  Mail,
-  MessageSquare,
-  Calendar,
-  Kanban,
-  ReceiptText,
-  Users,
-  Lock,
-  Fingerprint,
-  SquareArrowUpRight,
   LayoutDashboard,
-  ChartBar,
-  Banknote,
-  Gauge,
-  GraduationCap,
+  Bot,
+  Shirt,
+  Wallet,
+  NotebookPen,
+  ListTodo,
+  House,
   type LucideIcon,
 } from "lucide-react";
 
@@ -49,115 +40,46 @@ export const sidebarItems: NavGroup[] = [
     label: "Dashboards",
     items: [
       {
-        title: "Default",
+        title: "Overview",
         url: "/dashboard/default",
-        icon: LayoutDashboard,
+        icon: LayoutDashboard
       },
       {
-        title: "CRM",
+        title: "AIChat",
         url: "/dashboard/crm",
-        icon: ChartBar,
-      },
-      {
-        title: "Finance",
-        url: "/dashboard/finance",
-        icon: Banknote,
-      },
-      {
-        title: "Analytics",
-        url: "/dashboard/coming-soon",
-        icon: Gauge,
-        comingSoon: true,
-      },
-      {
-        title: "E-commerce",
-        url: "/dashboard/coming-soon",
-        icon: ShoppingBag,
-        comingSoon: true,
-      },
-      {
-        title: "Academy",
-        url: "/dashboard/coming-soon",
-        icon: GraduationCap,
-        comingSoon: true,
-      },
-      {
-        title: "Logistics",
-        url: "/dashboard/coming-soon",
-        icon: Forklift,
-        comingSoon: true,
-      },
+        icon: Bot
+      }
     ],
   },
   {
     id: 2,
-    label: "Pages",
+    label: "Functions",
     items: [
       {
-        title: "Email",
-        url: "/dashboard/coming-soon",
-        icon: Mail,
-        comingSoon: true,
+        title: "Wardrobe",
+        url: "/dashboard/wardrobe",
+        icon: Shirt
       },
       {
-        title: "Chat",
+        title: "Items",
         url: "/dashboard/coming-soon",
-        icon: MessageSquare,
-        comingSoon: true,
+        icon: House
       },
       {
-        title: "Calendar",
+        title: "Wallet",
         url: "/dashboard/coming-soon",
-        icon: Calendar,
-        comingSoon: true,
+        icon: Wallet
       },
       {
-        title: "Kanban",
+        title: "Notes",
         url: "/dashboard/coming-soon",
-        icon: Kanban,
-        comingSoon: true,
+        icon: NotebookPen
       },
       {
-        title: "Invoice",
+        title: "TodoList",
         url: "/dashboard/coming-soon",
-        icon: ReceiptText,
-        comingSoon: true,
-      },
-      {
-        title: "Users",
-        url: "/dashboard/coming-soon",
-        icon: Users,
-        comingSoon: true,
-      },
-      {
-        title: "Roles",
-        url: "/dashboard/coming-soon",
-        icon: Lock,
-        comingSoon: true,
-      },
-      {
-        title: "Authentication",
-        url: "/auth",
-        icon: Fingerprint,
-        subItems: [
-          { title: "Login v1", url: "/auth/v1/login", newTab: true },
-          { title: "Login v2", url: "/auth/v2/login", newTab: true },
-          { title: "Register v1", url: "/auth/v1/register", newTab: true },
-          { title: "Register v2", url: "/auth/v2/register", newTab: true },
-        ],
-      },
-    ],
-  },
-  {
-    id: 3,
-    label: "Misc",
-    items: [
-      {
-        title: "Others",
-        url: "/dashboard/coming-soon",
-        icon: SquareArrowUpRight,
-        comingSoon: true,
-      },
-    ],
-  },
+        icon: ListTodo
+      }
+    ]
+  }
 ];
